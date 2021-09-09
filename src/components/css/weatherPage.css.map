@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,uBAAuB,CAAC;EACpB,OAAO,EAAE,IAAI;CAChB;;AACD,AAAA,aAAa,CAAC;EACV,aAAa,EAAE,IAAI;EACnB,KAAK,EAAC,IAAI;EACV,MAAM,EAAE,IAAI;EACZ,gBAAgB,EAAE,0BAA0B;CAI/C;;AARD,AAKI,aALS,CAKT,mBAAmB,GAAG,EAAE,CAAC;EACrB,gBAAgB,EAAE,0BAA0B;CAC/C",
+    "sources": [
+        "weatherPage.scss"
+    ],
+    "names": [],
+    "file": "weatherPage.css"
+}

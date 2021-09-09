@@ -1,0 +1,72 @@
+.weather-page-container {
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(126, 72, 177);
+    .weather-page {
+        border-radius: 10px;
+        width:30vw;
+        height: 60vh;
+        .location-search-box {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .clock-container {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border-radius: 10px 10px 0 0;
+            .clock {
+                margin-left: 5px;
+            }
+        }
+        .weather-container {
+            background-color: inherit;
+            .weather-icon-temp {
+                .temp {
+                    padding: 20px;
+                    .temp-of-weather {
+                        padding-bottom: 20px;
+                    }
+                    .type-of-weather {
+                        padding-bottom: 40px;
+                    }
+                    .div-temperatures {
+                        border-top: 1px solid black;
+                        padding-top: 40px;
+                        padding-bottom: 20px;
+                        display: flex;
+                        justify-content: center;
+                        justify-content: space-evenly;
+                    }
+                    .pressure-and-humidity {
+                        padding: 20px;
+                        display: flex;
+                        justify-content: center;
+                        justify-content: space-evenly;
+                    }
+                }
+            }
+        }
+    }
+    @media ( max-width: 650px ) {
+        .weather-page {
+            width: 500px;
+            height: 90vh;
+        }
+    }
+    @media ( max-width: 350px ) {
+        .weather-page {
+            width: 300px;
+            height: 90vh;
+        }
+    }
+    @media ( max-width: 320px ) {
+        .weather-page {
+            width: 300px;
+            font: 15px;
+        }
+    }
+}
