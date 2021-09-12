@@ -27,6 +27,10 @@ function WeatherPage() {
         setInput(e.target.value)
     }
 
+    const handleSubmit = (e) => {
+        e.preventDefault()
+    }
+
     return (
         <div className="weather-page-container">
             <div className="weather-page">
@@ -37,13 +41,15 @@ function WeatherPage() {
                 <div className="weather-page-title">
                     <h2>Enter the location</h2>
                 </div>
-                <input 
-                    type="text" 
-                    className="location-search-box" 
-                    value={input}
-                    onChange={getInput}
-                    onKeyPress={search}
-                />
+                <form onSubmit={handleSubmit}>
+                    <input 
+                        type="text" 
+                        className="location-search-box form-control" 
+                        value={input}
+                        onChange={getInput}
+                        onKeyPress={search}
+                    />
+                </form>
                 {(typeof weather.main != "undefined") ? (
                 <div className="weather-container">
                     <div className="weather-location">
